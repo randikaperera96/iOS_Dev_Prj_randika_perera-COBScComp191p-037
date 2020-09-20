@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580E25952517AA5200CF1C2D /* Update.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580E25942517AA5200CF1C2D /* Update.storyboard */; };
 		58271943250DF601004224C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58271942250DF601004224C0 /* AppDelegate.swift */; };
 		58271945250DF601004224C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58271944250DF601004224C0 /* SceneDelegate.swift */; };
 		58271947250DF601004224C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58271946250DF601004224C0 /* ViewController.swift */; };
@@ -15,6 +16,13 @@
 		5827194F250DF606004224C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5827194D250DF606004224C0 /* LaunchScreen.storyboard */; };
 		5827195A250DF606004224C0 /* randika_perera_COBScComp191p_037Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58271959250DF606004224C0 /* randika_perera_COBScComp191p_037Tests.swift */; };
 		58271965250DF606004224C0 /* randika_perera_COBScComp191p_037UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58271964250DF606004224C0 /* randika_perera_COBScComp191p_037UITests.swift */; };
+		586DC1D52517652A00680A17 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1D42517652A00680A17 /* SettingsViewController.swift */; };
+		586DC1D7251766C800680A17 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DC1D6251766C800680A17 /* Authentication.storyboard */; };
+		586DC1DC2517679200680A17 /* UserFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DB2517679200680A17 /* UserFunctions.swift */; };
+		586DC1DE25176BA500680A17 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DD25176BA500680A17 /* LogInViewController.swift */; };
+		586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DF25176FEE00680A17 /* SignUpViewController.swift */; };
+		58E96B722517B555009DEA88 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B712517B555009DEA88 /* Home.storyboard */; };
+		58E96B742517B5DD009DEA88 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B732517B5DD009DEA88 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		580E25942517AA5200CF1C2D /* Update.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Update.storyboard; sourceTree = "<group>"; };
 		5827193F250DF601004224C0 /* NIBM COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIBM COVID19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58271942250DF601004224C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58271944250DF601004224C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		58271960250DF606004224C0 /* randika_perera-COBScComp191p-037UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "randika_perera-COBScComp191p-037UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58271964250DF606004224C0 /* randika_perera_COBScComp191p_037UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randika_perera_COBScComp191p_037UITests.swift; sourceTree = "<group>"; };
 		58271966250DF606004224C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586DC1D42517652A00680A17 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		586DC1D6251766C800680A17 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		586DC1DB2517679200680A17 /* UserFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFunctions.swift; sourceTree = "<group>"; };
+		586DC1DD25176BA500680A17 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		586DC1DF25176FEE00680A17 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		58E96B712517B555009DEA88 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		58E96B732517B5DD009DEA88 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +115,12 @@
 		58271941250DF601004224C0 /* randika_perera-COBScComp191p-037 */ = {
 			isa = PBXGroup;
 			children = (
+				586DC1D82517674900680A17 /* Helpers */,
+				58908C4F2516CF0900B68C4B /* Model */,
+				58908C4E2516CF0600B68C4B /* View */,
+				58908C4D2516CEF800B68C4B /* Controller */,
 				58271942250DF601004224C0 /* AppDelegate.swift */,
 				58271944250DF601004224C0 /* SceneDelegate.swift */,
-				58271946250DF601004224C0 /* ViewController.swift */,
-				58271948250DF601004224C0 /* Main.storyboard */,
 				5827194B250DF606004224C0 /* Assets.xcassets */,
 				5827194D250DF606004224C0 /* LaunchScreen.storyboard */,
 				58271950250DF606004224C0 /* Info.plist */,
@@ -126,6 +144,44 @@
 				58271966250DF606004224C0 /* Info.plist */,
 			);
 			path = "randika_perera-COBScComp191p-037UITests";
+			sourceTree = "<group>";
+		};
+		586DC1D82517674900680A17 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				586DC1DB2517679200680A17 /* UserFunctions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		58908C4D2516CEF800B68C4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58271946250DF601004224C0 /* ViewController.swift */,
+				586DC1D42517652A00680A17 /* SettingsViewController.swift */,
+				586DC1DD25176BA500680A17 /* LogInViewController.swift */,
+				586DC1DF25176FEE00680A17 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58908C4E2516CF0600B68C4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58271948250DF601004224C0 /* Main.storyboard */,
+				586DC1D6251766C800680A17 /* Authentication.storyboard */,
+				580E25942517AA5200CF1C2D /* Update.storyboard */,
+				58E96B712517B555009DEA88 /* Home.storyboard */,
+				58E96B732517B5DD009DEA88 /* Settings.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58908C4F2516CF0900B68C4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +288,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586DC1D7251766C800680A17 /* Authentication.storyboard in Resources */,
+				580E25952517AA5200CF1C2D /* Update.storyboard in Resources */,
 				5827194F250DF606004224C0 /* LaunchScreen.storyboard in Resources */,
 				5827194C250DF606004224C0 /* Assets.xcassets in Resources */,
 				5827194A250DF601004224C0 /* Main.storyboard in Resources */,
+				58E96B722517B555009DEA88 /* Home.storyboard in Resources */,
+				58E96B742517B5DD009DEA88 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586DC1DC2517679200680A17 /* UserFunctions.swift in Sources */,
+				586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */,
 				58271947250DF601004224C0 /* ViewController.swift in Sources */,
+				586DC1DE25176BA500680A17 /* LogInViewController.swift in Sources */,
 				58271943250DF601004224C0 /* AppDelegate.swift in Sources */,
 				58271945250DF601004224C0 /* SceneDelegate.swift in Sources */,
+				586DC1D52517652A00680A17 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
