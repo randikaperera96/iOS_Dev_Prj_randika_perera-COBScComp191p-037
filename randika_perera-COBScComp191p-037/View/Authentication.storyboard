@@ -74,7 +74,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fna-wj-c8M">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Jy-FS-Kfx">
                                         <rect key="frame" x="0.0" y="54" width="334" height="34"/>
@@ -89,11 +89,14 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fE1-Ly-4J9">
                                         <rect key="frame" x="0.0" y="162" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLu-gE-CAs">
                                         <rect key="frame" x="0.0" y="216" width="334" height="30"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="btSignUpTapped:" destination="Uja-Yv-5NI" eventType="touchUpInside" id="lX8-Q2-Ypg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -126,6 +129,12 @@
                         <viewLayoutGuide key="safeArea" id="am6-OC-aOt"/>
                     </view>
                     <navigationItem key="navigationItem" id="YDn-v5-QJN"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="hUj-eD-m7n" id="HEl-WJ-8Ih"/>
+                        <outlet property="txtFirstName" destination="fna-wj-c8M" id="Bgl-p6-22p"/>
+                        <outlet property="txtLastName" destination="7Jy-FS-Kfx" id="XOQ-F4-pJg"/>
+                        <outlet property="txtPassword" destination="fE1-Ly-4J9" id="YaQ-wf-kkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwG-qy-dtm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

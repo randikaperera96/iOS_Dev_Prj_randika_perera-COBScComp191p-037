@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 
 class UserFunctions{
@@ -23,5 +24,30 @@ class UserFunctions{
 		
 		
 		return true;
+	}
+	
+	func signUp(_ firstName:String,_ lastName:String,_ email:String,_ password:String, roleType:Int32) -> String{
+		
+		var err:String=""
+		
+		Auth.auth().createUser(withEmail: email, password: password) { ( result, error) in
+			
+			if error != nil {
+				err=error.debugDescription;
+			}else{
+				let db = Firestore.firestore()
+				
+				db.collection("user").addDocument( data:[
+					"uid":result!.user.uid,
+					"first_name":firstName,
+					"last_name":lastName,
+					"role_type":roleType
+				]) { (Error) in
+					err = Error.debugDescription
+				}
+			}
+		}
+		
+		return "Error: \(err)"
 	}
 }

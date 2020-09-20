@@ -21,7 +21,6 @@ class ViewController: UIViewController {
 		vc.view.backgroundColor = .yellow
 		
 		navigationController?.pushViewController(vc, animated: true)
-		  
 	}
 	
 }
