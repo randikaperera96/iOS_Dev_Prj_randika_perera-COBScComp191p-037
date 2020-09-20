@@ -21,6 +21,7 @@
 		586DC1DC2517679200680A17 /* UserFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DB2517679200680A17 /* UserFunctions.swift */; };
 		586DC1DE25176BA500680A17 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DD25176BA500680A17 /* LogInViewController.swift */; };
 		586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DF25176FEE00680A17 /* SignUpViewController.swift */; };
+		58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58927A262517BE06009D22DF /* GoogleService-Info.plist */; };
 		58E96B722517B555009DEA88 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B712517B555009DEA88 /* Home.storyboard */; };
 		58E96B742517B5DD009DEA88 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B732517B5DD009DEA88 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		586DC1DB2517679200680A17 /* UserFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFunctions.swift; sourceTree = "<group>"; };
 		586DC1DD25176BA500680A17 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		586DC1DF25176FEE00680A17 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		58927A262517BE06009D22DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58E96B712517B555009DEA88 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		58E96B732517B5DD009DEA88 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				5827194B250DF606004224C0 /* Assets.xcassets */,
 				5827194D250DF606004224C0 /* LaunchScreen.storyboard */,
 				58271950250DF606004224C0 /* Info.plist */,
+				58927A262517BE06009D22DF /* GoogleService-Info.plist */,
 			);
 			path = "randika_perera-COBScComp191p-037";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586DC1D7251766C800680A17 /* Authentication.storyboard in Resources */,
+				58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */,
 				580E25952517AA5200CF1C2D /* Update.storyboard in Resources */,
 				5827194F250DF606004224C0 /* LaunchScreen.storyboard in Resources */,
 				5827194C250DF606004224C0 /* Assets.xcassets in Resources */,
