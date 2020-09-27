@@ -8,17 +8,64 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Update-->
         <scene sceneID="HLi-nq-oEe">
             <objects>
-                <viewController id="zFH-YM-1lX" sceneMemberID="viewController">
+                <viewController id="zFH-YM-1lX" customClass="UpdateViewController" customModule="NIBM_COVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7dN-gT-fNr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ef-aW-oT9">
+                                <rect key="frame" x="10" y="108" width="394" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Create Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c64-Eu-4sZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="381.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohr-Nv-dPk">
+                                        <rect key="frame" x="381.5" y="0.0" width="12.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REf-XK-4w7">
+                                <rect key="frame" x="10" y="152" width="394" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="New Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLf-7G-Gct">
+                                        <rect key="frame" x="0.0" y="0.0" width="381.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l0-ea-K0Q">
+                                        <rect key="frame" x="381.5" y="0.0" width="12.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="REf-XK-4w7" firstAttribute="leading" secondItem="8gx-Bh-rlr" secondAttribute="leading" constant="10" id="553-Mm-UfV"/>
+                            <constraint firstItem="8gx-Bh-rlr" firstAttribute="trailing" secondItem="2Ef-aW-oT9" secondAttribute="trailing" constant="10" id="Vlw-K6-rpe"/>
+                            <constraint firstItem="8gx-Bh-rlr" firstAttribute="trailing" secondItem="REf-XK-4w7" secondAttribute="trailing" constant="10" id="Yss-hJ-XpF"/>
+                            <constraint firstItem="2Ef-aW-oT9" firstAttribute="leading" secondItem="8gx-Bh-rlr" secondAttribute="leading" constant="10" id="dXc-x1-rkR"/>
+                            <constraint firstItem="2Ef-aW-oT9" firstAttribute="top" secondItem="8gx-Bh-rlr" secondAttribute="top" constant="20" id="rng-Xe-cEg"/>
+                            <constraint firstItem="REf-XK-4w7" firstAttribute="top" secondItem="2Ef-aW-oT9" secondAttribute="bottom" constant="20" id="tcx-3T-39Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8gx-Bh-rlr"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xXL-FA-Uxh"/>
+                    <navigationItem key="navigationItem" title="Update" id="xXL-FA-Uxh"/>
+                    <connections>
+                        <segue destination="XgE-kt-0tM" kind="show" identifier="AuthSegue" id="2Mc-lW-JKa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Cv-Yd-Op6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +90,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="167-7l-aT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1.4492753623188408" y="1.3392857142857142"/>
+        </scene>
+        <!--Authentication-->
+        <scene sceneID="pkX-Wh-EoU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Authentication" id="XgE-kt-0tM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="n3l-k4-Mob"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzW-Cf-pF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559" y="1"/>
         </scene>
     </scenes>
     <resources>

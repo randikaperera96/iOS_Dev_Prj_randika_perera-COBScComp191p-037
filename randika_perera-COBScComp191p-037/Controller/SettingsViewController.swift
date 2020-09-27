@@ -13,17 +13,20 @@ class SettingsViewController: UIViewController {
 	//MARK: Properties
 	
 	
-	
-	@IBOutlet weak var btProfile: UIButton!
-	
-	
 	//MARK: Lifecycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
 	
-	@IBAction func btProfileTapped(_ sender: Any) {
+	
+	@IBAction func btLogoutTapped(_ sender: Any) {
 		
+		//		let vc = LogInViewController()
+		//		self.navigationController?.pushViewController(vc, animated: true)
+		
+		UserFunctions.signOut()
+		self.dismiss(animated: true
+			, completion: nil)
 	}
 	
 }

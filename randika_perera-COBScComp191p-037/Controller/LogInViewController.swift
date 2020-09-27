@@ -7,17 +7,39 @@
 //
 
 import UIKit
+import Firebase
 
 class LogInViewController: UIViewController {
 	
-	//MARK:LifeCycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-		
-    }
+	@IBOutlet weak var txtEmail: UITextField!
 	
+	@IBOutlet weak var txtPassword: UITextField!
+	
+	
+	
+	//MARK:LifeCycle
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		if(UserFunctions.isLoggedIn()){
+			self.dismiss(animated: true, completion: nil)
+		}
+	}
+	
+	//MARK:IBMethods
 	@IBAction func btSignInTapped(_ sender: Any) {
 		
+		guard let email = txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
 		
+		guard let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+		
+		UserFunctions.logIn(email, password)
+		
+		print("DEBUG: \(DebugHelper.getStringClassName(object: self)).btSignInTapped")
 	}
 }

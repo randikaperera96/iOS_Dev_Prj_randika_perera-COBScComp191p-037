@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController {
 		
 		let userType:Int32 = 0
 		
-		let error = UserFunctions.getInstance().signUp(firstName, lastName, email, password, roleType: userType)
+		let error = UserFunctions.signUp(firstName, lastName, email, password, roleType: userType)
 		
 		if error != ""{
 			print("DEBUG: \(error)")

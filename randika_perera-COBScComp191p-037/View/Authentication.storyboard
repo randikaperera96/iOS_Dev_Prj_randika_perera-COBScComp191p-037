@@ -55,6 +55,10 @@
                         <viewLayoutGuide key="safeArea" id="bk2-Bg-trN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In With Email" id="zoZ-yN-Q62"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="C4c-k1-yz9" id="6f4-69-CYA"/>
+                        <outlet property="txtPassword" destination="ODb-V0-6NE" id="FsZ-kS-VuJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfr-Hy-aTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,7 +147,7 @@
         <!--Update-->
         <scene sceneID="6Bi-lH-wKB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BWV-WT-osm" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="BWV-WT-osm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Update" image="plus" catalog="system" id="CWv-DJ-Jav"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

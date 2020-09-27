@@ -12,21 +12,27 @@ import Firebase
 
 class UserFunctions{
 	
-	static func getInstance()->UserFunctions{
-		return UserFunctions()
+	//	static func getInstance()->UserFunctions{
+	//		return UserFunctions()
+	//	}
+	//
+	//	private init() {
+	//
+	//	}
+	
+	static func logIn(_ email:String, _ password: String) -> Bool{
+		
+		var loggedIn = false
+		
+		Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+			
+			loggedIn = (error == nil)
+		}
+		
+		return loggedIn;
 	}
 	
-	private init() {
-		
-	}
-	
-	func logIn(_ email:String, _ password: String) -> Bool{
-		
-		
-		return true;
-	}
-	
-	func signUp(_ firstName:String,_ lastName:String,_ email:String,_ password:String, roleType:Int32) -> String{
+	static func signUp(_ firstName:String,_ lastName:String,_ email:String,_ password:String, roleType:Int32) -> String{
 		
 		var err:String=""
 		
@@ -49,5 +55,20 @@ class UserFunctions{
 		}
 		
 		return "Error: \(err)"
+	}
+	
+	
+	
+	static func signOut() -> Bool{
+		do{
+			try Auth.auth().signOut()
+			return true
+		}catch{
+			return false
+		}
+	}
+	
+	static func isLoggedIn() -> Bool{
+		return Auth.auth().currentUser?.uid != nil
 	}
 }
