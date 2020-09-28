@@ -7,22 +7,34 @@
 //
 
 import Foundation
+import UIKit
+import Toast
 
 class DebugHelper{
 	
 	static func getStringClassName (object:NSObject?) -> String{
-		guard let obj = object else {
-			return ""
-		}
+		
+		guard let obj = object else {return ""}
 		
 		return NSStringFromClass(type(of: obj))	}
 	
-	static func printDebugMessageOnConsole(_ message : String?){
+	static func printDebugMessageOnConsole(_ message : String){
 		
-		guard message != nil else {
-			return
-		}
+		guard message != nil else {return}
 		
 		print("DEBUG: \(message)")
+	}
+	
+	static func showDebugMessageOnToast(_ message : String, _ sender : UIViewController){
+//		guard message != nil else {return}
+//		guard sender != nil else {return}
+		
+		sender.view.makeToast(message)
+	}
+	
+	static func printAndShowDebugMessage(_ message : String, _ sender : UIViewController){
+		
+		printDebugMessageOnConsole(message)
+		showDebugMessageOnToast(message, sender)
 	}
 }

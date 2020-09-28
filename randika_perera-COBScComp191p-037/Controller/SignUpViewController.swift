@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast
 
 class SignUpViewController: UIViewController {
 	
@@ -44,6 +45,7 @@ class SignUpViewController: UIViewController {
 		
 		if error != ""{
 			print("DEBUG: \(error)")
+			view.makeToast("Error: \(error)")
 		}
 	}
 	

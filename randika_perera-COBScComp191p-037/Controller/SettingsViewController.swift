@@ -24,7 +24,9 @@ class SettingsViewController: UIViewController {
 		//		let vc = LogInViewController()
 		//		self.navigationController?.pushViewController(vc, animated: true)
 		
-		UserFunctions.signOut()
+		if UserFunctions.signOut(){
+			view.makeToast("Logged Out")
+		}
 		self.dismiss(animated: true
 			, completion: nil)
 	}

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Toast
 
 class LogInViewController: UIViewController {
 	
@@ -34,12 +35,61 @@ class LogInViewController: UIViewController {
 	//MARK:IBMethods
 	@IBAction func btSignInTapped(_ sender: Any) {
 		
-		guard let email = txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+		signIn()
+	}
+}
+
+extension LogInViewController{
+	
+	func signIn(){
+//		DebugHelper.printAndShowDebugMessage("\(DebugHelper.getStringClassName(object: self)).btSignInTapped", self)
+		
+		guard let email = txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {
+			
+			let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: .alert)
+			alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+				switch action.style{
+					case .default:
+						print("default")
+					
+					case .cancel:
+						print("cancel")
+					
+					case .destructive:
+						print("destructive")
+					
+					
+				}}))
+			self.present(alert, animated: true, completion: nil)
+			
+			return}
 		
 		guard let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
 		
-		UserFunctions.logIn(email, password)
+		let res = UserFunctions.logIn(email, password)
 		
-		print("DEBUG: \(DebugHelper.getStringClassName(object: self)).btSignInTapped")
+//		if UserFunctions.isLoggedIn(){
+//
+//			DispatchQueue.main.async {
+//				DebugHelper.printDebugMessageOnConsole("Login status : \(res)")
+//				DebugHelper.printDebugMessageOnConsole("Login status 2 : \(UserFunctions.isLoggedIn())")
+//				if res {
+//					self.view.makeToast("Logged In Successfully!")
+//					DebugHelper.printAndShowDebugMessage("after toast", self)
+//				}
+//			}
+//		}
+//		let crrentUser = Auth.auth().currentUser
+		let isLoggedIn = Auth.auth().currentUser?.uid != nil
+//		let uid = Auth.auth().currentUser?.uid
+		
+		if(isLoggedIn /*Auth.auth().currentUser?.uid != nil*/) {
+			DispatchQueue.main.async {
+//				let nav = UINavigationController(rootViewController: ())
+//				nav.modalPresentationStyle = .fullScreen
+//				self.present(nav, animated: true, completion: nil)
+				self.dismiss(animated: true, completion: nil)
+			}
+		}
 	}
 }

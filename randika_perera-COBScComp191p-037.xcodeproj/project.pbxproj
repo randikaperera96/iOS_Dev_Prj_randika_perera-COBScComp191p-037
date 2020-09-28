@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		586DC1DE25176BA500680A17 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DD25176BA500680A17 /* LogInViewController.swift */; };
 		586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DF25176FEE00680A17 /* SignUpViewController.swift */; };
 		58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58927A262517BE06009D22DF /* GoogleService-Info.plist */; };
+		58C6E1D42520F2AA00BE3AF3 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 58C6E1D32520F2AA00BE3AF3 /* Toast */; };
 		58E96B722517B555009DEA88 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B712517B555009DEA88 /* Home.storyboard */; };
 		58E96B742517B5DD009DEA88 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B732517B5DD009DEA88 /* Settings.storyboard */; };
 		9E6F27C802BF87F77031A0D0 /* AssetsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05B6E15860423D00C29AF52 /* AssetsUtils.swift */; };
@@ -94,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C6E1D42520F2AA00BE3AF3 /* Toast in Frameworks */,
 				C73985B7D9D9FDA29DF85A8B /* Pods_randika_perera_COBScComp191p_037.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +275,9 @@
 			dependencies = (
 			);
 			name = "randika_perera-COBScComp191p-037";
+			packageProductDependencies = (
+				58C6E1D32520F2AA00BE3AF3 /* Toast */,
+			);
 			productName = "randika_perera-COBScComp191p-037";
 			productReference = 5827193F250DF601004224C0 /* NIBM COVID19.app */;
 			productType = "com.apple.product-type.application";
@@ -349,6 +354,9 @@
 				Base,
 			);
 			mainGroup = 58271936250DF601004224C0;
+			packageReferences = (
+				58C6E1D22520F2AA00BE3AF3 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 58271940250DF601004224C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -401,13 +409,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-randika_perera-COBScComp191p-037/Pods-randika_perera-COBScComp191p-037-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-randika_perera-COBScComp191p-037/Pods-randika_perera-COBScComp191p-037-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -422,13 +426,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-randika_perera-COBScComp191p-037Tests/Pods-randika_perera-COBScComp191p-037Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-randika_perera-COBScComp191p-037Tests/Pods-randika_perera-COBScComp191p-037Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -509,13 +509,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-randika_perera-COBScComp191p-037-randika_perera-COBScComp191p-037UITests/Pods-randika_perera-COBScComp191p-037-randika_perera-COBScComp191p-037UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-randika_perera-COBScComp191p-037-randika_perera-COBScComp191p-037UITests/Pods-randika_perera-COBScComp191p-037-randika_perera-COBScComp191p-037UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -874,6 +870,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58C6E1D22520F2AA00BE3AF3 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58C6E1D32520F2AA00BE3AF3 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58C6E1D22520F2AA00BE3AF3 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58271937250DF601004224C0 /* Project object */;
 }

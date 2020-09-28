@@ -47,6 +47,8 @@ target 'randika_perera-COBScComp191p-037' do
 # Optionally, include the Swift extensions if you're using Swift.
   pod 'FirebaseFirestoreSwift'
 
+  #pod 'Toast-Swift', '~> 5.0.1'
+
   end
 
 end
