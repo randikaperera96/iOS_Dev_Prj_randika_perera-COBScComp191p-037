@@ -20,6 +20,10 @@
 		5827194F250DF606004224C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5827194D250DF606004224C0 /* LaunchScreen.storyboard */; };
 		5827195A250DF606004224C0 /* randika_perera_COBScComp191p_037Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58271959250DF606004224C0 /* randika_perera_COBScComp191p_037Tests.swift */; };
 		58271965250DF606004224C0 /* randika_perera_COBScComp191p_037UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58271964250DF606004224C0 /* randika_perera_COBScComp191p_037UITests.swift */; };
+		586D9EA42522C313006629C4 /* SafeActions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586D9EA32522C313006629C4 /* SafeActions.storyboard */; };
+		586D9EA62522FD25006629C4 /* NavTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586D9EA52522FD25006629C4 /* NavTest.storyboard */; };
+		586D9EA82522FD6E006629C4 /* NavTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586D9EA72522FD6E006629C4 /* NavTestViewController.swift */; };
+		586D9EAA25230592006629C4 /* SafeActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586D9EA925230592006629C4 /* SafeActionsViewController.swift */; };
 		586DC1D52517652A00680A17 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1D42517652A00680A17 /* SettingsViewController.swift */; };
 		586DC1D7251766C800680A17 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586DC1D6251766C800680A17 /* Authentication.storyboard */; };
 		586DC1DC2517679200680A17 /* UserFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DB2517679200680A17 /* UserFunctions.swift */; };
@@ -27,6 +31,7 @@
 		586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DF25176FEE00680A17 /* SignUpViewController.swift */; };
 		58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58927A262517BE06009D22DF /* GoogleService-Info.plist */; };
 		58C6E1D42520F2AA00BE3AF3 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 58C6E1D32520F2AA00BE3AF3 /* Toast */; };
+		58C6E1D625228B5300BE3AF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */; };
 		58E96B722517B555009DEA88 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B712517B555009DEA88 /* Home.storyboard */; };
 		58E96B742517B5DD009DEA88 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E96B732517B5DD009DEA88 /* Settings.storyboard */; };
 		9E6F27C802BF87F77031A0D0 /* AssetsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05B6E15860423D00C29AF52 /* AssetsUtils.swift */; };
@@ -73,12 +78,17 @@
 		58271960250DF606004224C0 /* randika_perera-COBScComp191p-037UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "randika_perera-COBScComp191p-037UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58271964250DF606004224C0 /* randika_perera_COBScComp191p_037UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randika_perera_COBScComp191p_037UITests.swift; sourceTree = "<group>"; };
 		58271966250DF606004224C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586D9EA32522C313006629C4 /* SafeActions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SafeActions.storyboard; sourceTree = "<group>"; };
+		586D9EA52522FD25006629C4 /* NavTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavTest.storyboard; sourceTree = "<group>"; };
+		586D9EA72522FD6E006629C4 /* NavTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTestViewController.swift; sourceTree = "<group>"; };
+		586D9EA925230592006629C4 /* SafeActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeActionsViewController.swift; sourceTree = "<group>"; };
 		586DC1D42517652A00680A17 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		586DC1D6251766C800680A17 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		586DC1DB2517679200680A17 /* UserFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFunctions.swift; sourceTree = "<group>"; };
 		586DC1DD25176BA500680A17 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		586DC1DF25176FEE00680A17 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		58927A262517BE06009D22DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		58E96B712517B555009DEA88 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		58E96B732517B5DD009DEA88 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		66DAFABBBA874DE971D5167B /* Pods-randika_perera-COBScComp191p-037.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-randika_perera-COBScComp191p-037.debug.xcconfig"; path = "Target Support Files/Pods-randika_perera-COBScComp191p-037/Pods-randika_perera-COBScComp191p-037.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +174,8 @@
 				58271950250DF606004224C0 /* Info.plist */,
 				58927A262517BE06009D22DF /* GoogleService-Info.plist */,
 				E0AC9560E5D14AD79E39F3FF /* HappyCodingSupport */,
+				586D9EA52522FD25006629C4 /* NavTest.storyboard */,
+				586D9EA72522FD6E006629C4 /* NavTestViewController.swift */,
 			);
 			path = "randika_perera-COBScComp191p-037";
 			sourceTree = "<group>";
@@ -203,6 +215,8 @@
 				586DC1DD25176BA500680A17 /* LogInViewController.swift */,
 				586DC1DF25176FEE00680A17 /* SignUpViewController.swift */,
 				581FF4F52520D01200A70AFF /* UpdateViewController.swift */,
+				58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */,
+				586D9EA925230592006629C4 /* SafeActionsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +229,7 @@
 				580E25942517AA5200CF1C2D /* Update.storyboard */,
 				58E96B712517B555009DEA88 /* Home.storyboard */,
 				58E96B732517B5DD009DEA88 /* Settings.storyboard */,
+				586D9EA32522C313006629C4 /* SafeActions.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,11 +390,13 @@
 			files = (
 				586DC1D7251766C800680A17 /* Authentication.storyboard in Resources */,
 				58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */,
+				586D9EA42522C313006629C4 /* SafeActions.storyboard in Resources */,
 				580E25952517AA5200CF1C2D /* Update.storyboard in Resources */,
 				5827194F250DF606004224C0 /* LaunchScreen.storyboard in Resources */,
 				5827194C250DF606004224C0 /* Assets.xcassets in Resources */,
 				5827194A250DF601004224C0 /* Main.storyboard in Resources */,
 				58E96B722517B555009DEA88 /* Home.storyboard in Resources */,
+				586D9EA62522FD25006629C4 /* NavTest.storyboard in Resources */,
 				58E96B742517B5DD009DEA88 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,9 +550,12 @@
 				586DC1DE25176BA500680A17 /* LogInViewController.swift in Sources */,
 				58271943250DF601004224C0 /* AppDelegate.swift in Sources */,
 				58271945250DF601004224C0 /* SceneDelegate.swift in Sources */,
+				586D9EA82522FD6E006629C4 /* NavTestViewController.swift in Sources */,
+				586D9EAA25230592006629C4 /* SafeActionsViewController.swift in Sources */,
 				586DC1D52517652A00680A17 /* SettingsViewController.swift in Sources */,
 				9E6F27C802BF87F77031A0D0 /* AssetsUtils.swift in Sources */,
 				581FF4F62520D01200A70AFF /* UpdateViewController.swift in Sources */,
+				58C6E1D625228B5300BE3AF3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

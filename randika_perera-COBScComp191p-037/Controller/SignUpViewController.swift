@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Toast
+import Firebase
 
 class SignUpViewController: UIViewController {
 	
@@ -40,13 +40,7 @@ class SignUpViewController: UIViewController {
 		guard let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
 		
 		let userType:Int32 = 0
-		
-		let error = UserFunctions.signUp(firstName, lastName, email, password, roleType: userType)
-		
-		if error != ""{
-			print("DEBUG: \(error)")
-			view.makeToast("Error: \(error)")
-		}
+		signUp(firstName, lastName, email, password, roleType: userType)
 	}
 	
 	@IBAction func btGoToLoginTapped(_ sender: Any) {
@@ -64,4 +58,34 @@ class SignUpViewController: UIViewController {
 	}
 	*/
 	
+}
+
+extension SignUpViewController{
+	
+	func signUp(_ firstName:String,_ lastName:String,_ email:String,_ password:String, roleType:Int32){
+		
+		Auth.auth().createUser(withEmail: email, password: password) { ( result, error) in
+			
+			if error != nil {
+				self.view.makeToast(error.debugDescription)
+			}else{
+				let db = Firestore.firestore()
+				
+				db.collection("user").addDocument( data:[
+					"uid":result!.user.uid,
+					"first_name":firstName,
+					"last_name":lastName,
+					"role_type":roleType
+				]) { (Error) in
+					self.view.makeToast(Error.debugDescription)
+					
+					if (Error != nil) {
+						DebugHelper.printAndShowDebugMessage("Error: \(Error) \n \(Error.debugDescription)", self)
+					}else{
+						self.dismiss(animated: true, completion: nil)
+					}
+				}
+			}
+		}
+	}
 }

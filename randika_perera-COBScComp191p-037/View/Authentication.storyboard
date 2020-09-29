@@ -54,7 +54,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bk2-Bg-trN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign In With Email" id="zoZ-yN-Q62"/>
+                    <navigationItem key="navigationItem" title="Sign In With Email" id="zoZ-yN-Q62">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="9dj-8I-sDb">
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btExitTapped:" destination="ybl-UX-PU1" id="sua-si-6iV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtEmail" destination="C4c-k1-yz9" id="6f4-69-CYA"/>
                         <outlet property="txtPassword" destination="ODb-V0-6NE" id="FsZ-kS-VuJ"/>

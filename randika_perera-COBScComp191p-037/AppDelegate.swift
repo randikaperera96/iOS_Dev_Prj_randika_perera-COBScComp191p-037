@@ -18,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		FirebaseApp.configure()
 		
+//		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//		let vc = storyboard.instantiateViewControllerWithIdentifier(identifier) as! UIViewController
+//		self.window?.rootViewController = vc
+//
+//		let storyboard = UIStoryboard(name: "Authentication", bundle: Controller)
+//		let vc = storyboard.instantiateViewController(withIdentifier: "LogInViewController") as! UIViewController
+//		self.window?.rootViewController = vc
+		
+		
+		
 		return true
 	}
 	

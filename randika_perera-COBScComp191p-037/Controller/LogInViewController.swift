@@ -37,6 +37,13 @@ class LogInViewController: UIViewController {
 		
 		signIn()
 	}
+	
+	
+	@IBAction func btExitTapped(_ sender: UIBarButtonItem) {
+		
+		exit(EXIT_SUCCESS)
+	}
+	
 }
 
 extension LogInViewController{
