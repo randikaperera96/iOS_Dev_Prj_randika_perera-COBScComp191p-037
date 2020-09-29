@@ -23,7 +23,8 @@ extension UIViewController {
 					print("destructive")
 				
 				
-			}}))
+			}
+		})		)
 		self.present(alert, animated: true, completion: nil)
 	}
 	
