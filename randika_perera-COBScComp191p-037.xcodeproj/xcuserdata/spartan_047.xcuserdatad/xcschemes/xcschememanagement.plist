@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>23</integer>
 		</dict>
+		<key>randika_perera-COBScComp191p-037Tests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5827193E250DF601004224C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58271954250DF606004224C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5827195F250DF606004224C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

@@ -829,7 +829,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/randika_perera-COBScComp191p-037.app/randika_perera-COBScComp191p-037";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NIBM COVID19.app/NIBM COVID19";
 			};
 			name = Debug;
 		};
@@ -852,7 +852,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/randika_perera-COBScComp191p-037.app/randika_perera-COBScComp191p-037";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NIBM COVID19.app/NIBM COVID19";
 			};
 			name = Release;
 		};
