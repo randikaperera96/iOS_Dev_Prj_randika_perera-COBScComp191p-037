@@ -31,6 +31,7 @@
 		586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC1DF25176FEE00680A17 /* SignUpViewController.swift */; };
 		588068D625235D6E007B7C5E /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588068D525235D6E007B7C5E /* Notifications.storyboard */; };
 		588068D825235E1D007B7C5E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068D725235E1D007B7C5E /* NotificationsViewController.swift */; };
+		588068DD25239F59007B7C5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068DC25239F59007B7C5E /* ProfileViewController.swift */; };
 		58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58927A262517BE06009D22DF /* GoogleService-Info.plist */; };
 		58C6E1D42520F2AA00BE3AF3 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 58C6E1D32520F2AA00BE3AF3 /* Toast */; };
 		58C6E1D625228B5300BE3AF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */; };
@@ -91,6 +92,7 @@
 		586DC1DF25176FEE00680A17 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		588068D525235D6E007B7C5E /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		588068D725235E1D007B7C5E /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		588068DC25239F59007B7C5E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		58927A262517BE06009D22DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		58E96B712517B555009DEA88 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -220,12 +222,21 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		588068DB25239F26007B7C5E /* SettingsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				586DC1D42517652A00680A17 /* SettingsViewController.swift */,
+				588068DC25239F59007B7C5E /* ProfileViewController.swift */,
+			);
+			path = SettingsControllers;
+			sourceTree = "<group>";
+		};
 		58908C4D2516CEF800B68C4B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				588068DB25239F26007B7C5E /* SettingsControllers */,
 				586D9EAB25234263006629C4 /* AuthenticationControllers */,
 				58271946250DF601004224C0 /* ViewController.swift */,
-				586DC1D42517652A00680A17 /* SettingsViewController.swift */,
 				581FF4F52520D01200A70AFF /* UpdateViewController.swift */,
 				58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */,
 				586D9EA925230592006629C4 /* SafeActionsViewController.swift */,
@@ -563,6 +574,7 @@
 				586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */,
 				581FF4F42520668C00A70AFF /* DebugHelper.swift in Sources */,
 				58271947250DF601004224C0 /* ViewController.swift in Sources */,
+				588068DD25239F59007B7C5E /* ProfileViewController.swift in Sources */,
 				586DC1DE25176BA500680A17 /* LogInViewController.swift in Sources */,
 				58271943250DF601004224C0 /* AppDelegate.swift in Sources */,
 				58271945250DF601004224C0 /* SceneDelegate.swift in Sources */,
