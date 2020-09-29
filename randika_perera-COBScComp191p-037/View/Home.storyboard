@@ -304,6 +304,7 @@
                     <navigationItem key="navigationItem" title="Home" id="BU3-gg-TqM"/>
                     <connections>
                         <segue destination="6qW-aR-GgF" kind="show" identifier="AuthSegue" id="uSj-vz-ovV"/>
+                        <segue destination="haH-Re-MyF" kind="show" identifier="mapSegue" id="REj-QR-RUF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abA-ti-Xn8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -329,6 +330,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWs-Bn-dIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1090" y="-338"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Upj-cu-ifS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="haH-Re-MyF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cRr-eV-Ib9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIC-Gd-Iqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="-313"/>
         </scene>
         <!--Authentication-->
         <scene sceneID="4fC-JT-QNG">

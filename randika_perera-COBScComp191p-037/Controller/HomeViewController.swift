@@ -61,4 +61,16 @@ extension HomeViewController{
 			}
 		}
 	}
+	
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//		super.tableView(tableView, didSelectRowAt: indexPath)
+//		print("section: \(indexPath.section)")
+//		print("row: \(indexPath.row)")
+		
+		if(indexPath.row == 6){
+			performSegue(withIdentifier: "mapSegue", sender: self)
+		}
+	}
+	
 }

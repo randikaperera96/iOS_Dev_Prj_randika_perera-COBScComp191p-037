@@ -32,6 +32,8 @@
 		588068D625235D6E007B7C5E /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588068D525235D6E007B7C5E /* Notifications.storyboard */; };
 		588068D825235E1D007B7C5E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068D725235E1D007B7C5E /* NotificationsViewController.swift */; };
 		588068DD25239F59007B7C5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068DC25239F59007B7C5E /* ProfileViewController.swift */; };
+		588068DF2523B6F6007B7C5E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588068DE2523B6F6007B7C5E /* Map.storyboard */; };
+		588068E12523B7AE007B7C5E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068E02523B7AE007B7C5E /* MapViewController.swift */; };
 		58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58927A262517BE06009D22DF /* GoogleService-Info.plist */; };
 		58C6E1D42520F2AA00BE3AF3 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 58C6E1D32520F2AA00BE3AF3 /* Toast */; };
 		58C6E1D625228B5300BE3AF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */; };
@@ -93,6 +95,8 @@
 		588068D525235D6E007B7C5E /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		588068D725235E1D007B7C5E /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		588068DC25239F59007B7C5E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		588068DE2523B6F6007B7C5E /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		588068E02523B7AE007B7C5E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		58927A262517BE06009D22DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		58E96B712517B555009DEA88 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 				58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */,
 				586D9EA925230592006629C4 /* SafeActionsViewController.swift */,
 				588068D725235E1D007B7C5E /* NotificationsViewController.swift */,
+				588068E02523B7AE007B7C5E /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				58E96B732517B5DD009DEA88 /* Settings.storyboard */,
 				586D9EA32522C313006629C4 /* SafeActions.storyboard */,
 				588068D525235D6E007B7C5E /* Notifications.storyboard */,
+				588068DE2523B6F6007B7C5E /* Map.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				58E96B722517B555009DEA88 /* Home.storyboard in Resources */,
 				586D9EA62522FD25006629C4 /* NavTest.storyboard in Resources */,
 				58E96B742517B5DD009DEA88 /* Settings.storyboard in Resources */,
+				588068DF2523B6F6007B7C5E /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +591,7 @@
 				9E6F27C802BF87F77031A0D0 /* AssetsUtils.swift in Sources */,
 				581FF4F62520D01200A70AFF /* UpdateViewController.swift in Sources */,
 				58C6E1D625228B5300BE3AF3 /* HomeViewController.swift in Sources */,
+				588068E12523B7AE007B7C5E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
