@@ -23,7 +23,7 @@
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btLogoutTapped:" destination="DqB-wU-yQV" eventType="touchUpInside" id="JmM-gU-BnM"/>
+                                    <action selector="btLogoutTapped:" destination="DqB-wU-yQV" eventType="touchUpInside" id="TjZ-WM-2TI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,7 +37,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JFw-dm-KvU"/>
                     <connections>
-                        <segue destination="iDz-Ly-Bw0" kind="show" identifier="showLoginSegue" id="iLN-Jq-hBs"/>
+                        <segue destination="iDz-Ly-Bw0" kind="show" identifier="AuthSegue" id="iLN-Jq-hBs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljK-3e-8c6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

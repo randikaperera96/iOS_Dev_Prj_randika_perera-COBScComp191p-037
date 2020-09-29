@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EEC9E3C9-80B2-43A0-9F6A-5B68DCFC30F0"
+            uuid = "75903CF1-6B02-4AA8-9AA1-06D72E2FFB4A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "randika_perera-COBScComp191p-037/Controller/LogInViewController.swift"
+            filePath = "randika_perera-COBScComp191p-037/Controller/SettingsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "signIn()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "btLogoutTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06204A88-C25A-4588-8F90-B409197400C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "randika_perera-COBScComp191p-037/Controller/SettingsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "btLogoutTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

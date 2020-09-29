@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="BRU-KI-ZOY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="56x-tk-arq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="9uQ-9J-3N1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SZ5-Ga-SYS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -47,6 +46,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fGL-eS-XVo"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56x-tk-arq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968" y="-778"/>
         </scene>
@@ -109,6 +109,10 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDO-j6-42t">
                                                     <rect key="frame" x="178" y="89" width="116" height="30"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                     <state key="normal" title="Safe Actions     &gt;"/>
                                                     <connections>
                                                         <action selector="safeActionsTapped:" destination="uxq-GB-Aed" eventType="touchUpInside" id="XTv-E7-z9q"/>
@@ -132,7 +136,7 @@
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
                                         <connections>
-                                            <segue destination="2hb-SA-Xz4" kind="show" id="p25-jL-Vdc"/>
+                                            <segue destination="2hb-SA-Xz4" kind="show" identifier="safeActions" id="p25-jL-Vdc"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="cgj-5d-xjP">

@@ -7,35 +7,30 @@
 //
 
 import UIKit
+import Firebase
 
 class UpdateViewController: UIViewController {
 	
 	private let AUTH_SEGUE = "AuthSegue"
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        showLogin()
-    }
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
 	
 	override func viewWillAppear(_ animated: Bool) {
-		if(!UserFunctions.isLoggedIn()){
-//			self.dismiss(animated: true, completion: nil)
-			navigationController?.popViewController(animated: true)
-		}
+		checkAndShowLogIn()
 	}
-
+	
 }
 
 extension UpdateViewController{
 	
-	func showLogin() -> Bool{
-		if(UserFunctions.isLoggedIn()){
-			return true
-		}else{
-			performSegue(withIdentifier: AUTH_SEGUE, sender: self)
-			DebugHelper.printDebugMessageOnConsole("performed auth segue")
+	func checkAndShowLogIn(){
+		if(Auth.auth().currentUser?.uid == nil){
+			
+			DispatchQueue.main.async {
+				self.performSegue(withIdentifier: self.AUTH_SEGUE, sender: self)
+			}
 		}
-		return true
 	}
 }

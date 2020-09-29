@@ -7,32 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UITableViewController {
 	private let AUTH_SEGUE = "AuthSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		showLogin()
     }
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		showLogin()
-		DebugHelper.printAndShowDebugMessage("viewDidAppear", self)
+		checkAndShowLogIn()
+		DebugHelper.printDebugMessageOnConsole("viewDidAppear")
 	}
 	
 	
 	
 	@IBAction func safeActionsTapped(_ sender: Any) {
-//		view.makeToast("safeActionsTapped")
-//		let sb: UIStoryboard = UIStoryboard(name: "NavTest", bundle: nil)
-//		let vc  = sb.instantiateViewController(identifier: "navTest") as! NavTestViewController
 		
-		let storyBoard: UIStoryboard = UIStoryboard(name: "NavTest", bundle: nil)
-		let newViewController = storyBoard.instantiateViewController(withIdentifier: "navTest") as! NavTestViewController
-		newViewController.modalPresentationStyle = .fullScreen
-		self.present(newViewController, animated: true, completion: nil)
+//		let storyBoard: UIStoryboard = UIStoryboard(name: "NavTest", bundle: nil)
+//		let newViewController = storyBoard.instantiateViewController(withIdentifier: "navTest") as! NavTestViewController
+//		newViewController.modalPresentationStyle = .fullScreen
+//		self.present(newViewController, animated: true, completion: nil)
+		
+		performSegue(withIdentifier: "safeActions", sender: self)
 	}
 
 	
@@ -53,13 +52,13 @@ class HomeViewController: UITableViewController {
 }
 extension HomeViewController{
 	
-	func showLogin() -> Bool{
-		if(UserFunctions.isLoggedIn()){
-			return true
-		}else{
-			performSegue(withIdentifier: AUTH_SEGUE, sender: self)
-			DebugHelper.printDebugMessageOnConsole("performed auth segue")
+	
+	func checkAndShowLogIn(){
+		if(Auth.auth().currentUser?.uid == nil){
+			
+			DispatchQueue.main.async {
+				self.performSegue(withIdentifier: self.AUTH_SEGUE, sender: self)
+			}
 		}
-		return true
 	}
 }

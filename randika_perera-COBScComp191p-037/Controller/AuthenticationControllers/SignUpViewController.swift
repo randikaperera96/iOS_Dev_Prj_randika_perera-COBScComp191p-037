@@ -17,7 +17,6 @@ class SignUpViewController: UIViewController {
 	
 	@IBOutlet weak var txtEmail: UITextField!
 	
-	
 	@IBOutlet weak var txtPassword: UITextField!
 	
 	
@@ -31,16 +30,9 @@ class SignUpViewController: UIViewController {
 	
 	@IBAction func btSignUpTapped(_ sender: Any) {
 		
-		guard let firstName = txtFirstName.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
 		
-		guard let lastName = txtLastName.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
 		
-		guard let email = txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
-		
-		guard let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
-		
-		let userType:Int32 = 0
-		signUp(firstName, lastName, email, password, roleType: userType)
+		signUp()
 	}
 	
 	@IBAction func btGoToLoginTapped(_ sender: Any) {
@@ -62,12 +54,52 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController{
 	
-	func signUp(_ firstName:String,_ lastName:String,_ email:String,_ password:String, roleType:Int32){
+	func signUp(){
+		
+		guard let firstName = txtFirstName.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+		
+		guard let lastName = txtLastName.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
+		
+		guard let email = txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+		
+		guard let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+		
+		let userType:Int32 = 0
+		
+		if(firstName.isEmpty){
+			showErrorMessageDialog("First name can't be empty!")
+			return
+		}
+		
+		if(lastName.isEmpty){
+			showErrorMessageDialog("Last name can't be empty!")
+			return
+		}
+		
+		
+		if(email.isEmpty){
+			showErrorMessageDialog("Email can't be empty!")
+			return
+		}
+		
+		if(password.isEmpty){
+			showErrorMessageDialog("Password can't be empty!")
+			return
+		}
+		
+		if(password.count<6){
+			showErrorMessageDialog("Password length can't be less than six(6) characters!")
+			return
+		}
+		
+		
 		
 		Auth.auth().createUser(withEmail: email, password: password) { ( result, error) in
 			
 			if error != nil {
-				self.view.makeToast(error.debugDescription)
+				DebugHelper.printDebugMessageOnConsole(error.debugDescription)
+				
+				self.showErrorMessageDialog("Failed to create new user!")
 			}else{
 				let db = Firestore.firestore()
 				
@@ -75,12 +107,13 @@ extension SignUpViewController{
 					"uid":result!.user.uid,
 					"first_name":firstName,
 					"last_name":lastName,
-					"role_type":roleType
+					"role_type":userType
 				]) { (Error) in
-					self.view.makeToast(Error.debugDescription)
 					
 					if (Error != nil) {
-						DebugHelper.printAndShowDebugMessage("Error: \(Error) \n \(Error.debugDescription)", self)
+						DebugHelper.printDebugMessageOnConsole("Error: \(Error) \n \(Error.debugDescription)")
+						
+						self.showErrorMessageDialog("Failed to create new user!")
 					}else{
 						self.dismiss(animated: true, completion: nil)
 					}

@@ -198,6 +198,15 @@
 			path = "randika_perera-COBScComp191p-037UITests";
 			sourceTree = "<group>";
 		};
+		586D9EAB25234263006629C4 /* AuthenticationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				586DC1DD25176BA500680A17 /* LogInViewController.swift */,
+				586DC1DF25176FEE00680A17 /* SignUpViewController.swift */,
+			);
+			path = AuthenticationControllers;
+			sourceTree = "<group>";
+		};
 		586DC1D82517674900680A17 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,10 +219,9 @@
 		58908C4D2516CEF800B68C4B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				586D9EAB25234263006629C4 /* AuthenticationControllers */,
 				58271946250DF601004224C0 /* ViewController.swift */,
 				586DC1D42517652A00680A17 /* SettingsViewController.swift */,
-				586DC1DD25176BA500680A17 /* LogInViewController.swift */,
-				586DC1DF25176FEE00680A17 /* SignUpViewController.swift */,
 				581FF4F52520D01200A70AFF /* UpdateViewController.swift */,
 				58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */,
 				586D9EA925230592006629C4 /* SafeActionsViewController.swift */,

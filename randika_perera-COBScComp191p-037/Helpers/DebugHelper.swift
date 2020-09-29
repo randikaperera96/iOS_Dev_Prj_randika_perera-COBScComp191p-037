@@ -32,9 +32,14 @@ class DebugHelper{
 		sender.view.makeToast(message)
 	}
 	
+	static func showDebugMessageOnAlert(_ message : String, _ sender : UIViewController){
+		sender.showMessageDialog("DEBUG", message)
+	}
+	
 	static func printAndShowDebugMessage(_ message : String, _ sender : UIViewController){
 		
 		printDebugMessageOnConsole(message)
 		showDebugMessageOnToast(message, sender)
+		showDebugMessageOnAlert(message, sender)
 	}
 }

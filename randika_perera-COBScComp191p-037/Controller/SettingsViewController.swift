@@ -7,28 +7,48 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsViewController: UIViewController {
 	
 	//MARK: Properties
-	
+	private let AUTH_SEGUE = "AuthSegue"
 	
 	//MARK: Lifecycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
 	
+	override func viewDidAppear(_ animated: Bool) {
+		checkAndShowLogIn()
+	}
+	
 	
 	@IBAction func btLogoutTapped(_ sender: Any) {
-		
-		//		let vc = LogInViewController()
-		//		self.navigationController?.pushViewController(vc, animated: true)
-		
-		if UserFunctions.signOut(){
-			view.makeToast("Logged Out")
+		do{
+			try Auth.auth().signOut()
+
+			DispatchQueue.main.async {
+				self.showSuccessMessageDialog("Signed out successfully!")
+				self.checkAndShowLogIn()
+
+			}
+		}catch{
+			self.showErrorMessageDialog("Sign out error!")
 		}
-		self.dismiss(animated: true
-			, completion: nil)
+		
+//		checkAndShowLogIn()
+	}
+	
+	func checkAndShowLogIn(){
+
+		DebugHelper.printDebugMessageOnConsole("start -----  \(Auth.auth().currentUser?.uid == nil)")
+		if(Auth.auth().currentUser?.uid == nil){
+			DispatchQueue.main.async {
+				DebugHelper.printDebugMessageOnConsole("\(Auth.auth().currentUser?.uid == nil)")
+				self.performSegue(withIdentifier: self.AUTH_SEGUE, sender: self)
+			}
+		}
 	}
 	
 }
