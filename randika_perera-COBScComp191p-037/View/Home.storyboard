@@ -27,11 +27,11 @@
             </objects>
             <point key="canvasLocation" x="-281" y="-92"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="J2R-lm-ELg">
             <objects>
                 <tableViewController id="uxq-GB-Aed" customClass="HomeViewController" customModule="NIBM_COVID19" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y8V-1u-bXl">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y8V-1u-bXl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -266,6 +266,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="20" id="gOV-6E-krr">
+                                        <rect key="frame" x="0.0" y="527" width="414" height="20"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gOV-6E-krr" id="jyK-u9-8kw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -274,7 +282,7 @@
                             <outlet property="delegate" destination="uxq-GB-Aed" id="eQx-3G-APL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BU3-gg-TqM"/>
+                    <navigationItem key="navigationItem" title="Home" id="BU3-gg-TqM"/>
                     <connections>
                         <segue destination="6qW-aR-GgF" kind="show" identifier="AuthSegue" id="uSj-vz-ovV"/>
                     </connections>
