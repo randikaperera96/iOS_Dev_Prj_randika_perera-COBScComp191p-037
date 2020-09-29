@@ -62,32 +62,32 @@ extension SignUpViewController{
 		
 		guard let email = txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
 		
-		guard let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+		guard let password = txtPassword.text else {return}
 		
 		let userType:Int32 = 0
 		
-		if(firstName.isEmpty){
+		if(ValidationService.isStringEmpty(firstName)){
 			showErrorMessageDialog("First name can't be empty!")
 			return
 		}
 		
-		if(lastName.isEmpty){
+		if(ValidationService.isStringEmpty(lastName)){
 			showErrorMessageDialog("Last name can't be empty!")
 			return
 		}
 		
 		
-		if(email.isEmpty){
+		if(ValidationService.isStringEmpty(email)){
 			showErrorMessageDialog("Email can't be empty!")
 			return
 		}
 		
-		if(password.isEmpty){
+		if(ValidationService.isStringEmpty(password)){
 			showErrorMessageDialog("Password can't be empty!")
 			return
 		}
 		
-		if(password.count<6){
+		if(!ValidationService.isValidPasswordLength(password)){
 			showErrorMessageDialog("Password length can't be less than six(6) characters!")
 			return
 		}

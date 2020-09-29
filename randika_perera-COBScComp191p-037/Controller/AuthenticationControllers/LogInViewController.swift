@@ -56,20 +56,19 @@ extension LogInViewController{
 			
 		}
 		
-		guard let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {
-			
+		guard let password = txtPassword.text else {
 			
 			self.showErrorMessageDialog("Password can't be empty!")
 			return
 		}
 		
-		if(email.isEmpty){
+		if(ValidationService.isStringEmpty(email)){
 			
 			self.showErrorMessageDialog("Email can't be empty!")
 			return
 		}
 		
-		if(password.isEmpty){
+		if(ValidationService.isStringEmpty(password)){
 			self.showErrorMessageDialog("Password can't be empty!")
 			return
 		}

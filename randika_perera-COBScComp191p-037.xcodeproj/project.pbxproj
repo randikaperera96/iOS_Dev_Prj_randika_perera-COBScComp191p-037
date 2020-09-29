@@ -34,6 +34,7 @@
 		588068DD25239F59007B7C5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068DC25239F59007B7C5E /* ProfileViewController.swift */; };
 		588068DF2523B6F6007B7C5E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588068DE2523B6F6007B7C5E /* Map.storyboard */; };
 		588068E12523B7AE007B7C5E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068E02523B7AE007B7C5E /* MapViewController.swift */; };
+		588068F72523F4DA007B7C5E /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588068F62523F4DA007B7C5E /* ValidationService.swift */; };
 		58927A272517BE06009D22DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58927A262517BE06009D22DF /* GoogleService-Info.plist */; };
 		58C6E1D42520F2AA00BE3AF3 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 58C6E1D32520F2AA00BE3AF3 /* Toast */; };
 		58C6E1D625228B5300BE3AF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */; };
@@ -97,6 +98,7 @@
 		588068DC25239F59007B7C5E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		588068DE2523B6F6007B7C5E /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		588068E02523B7AE007B7C5E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		588068F62523F4DA007B7C5E /* ValidationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		58927A262517BE06009D22DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58C6E1D525228B5300BE3AF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		58E96B712517B555009DEA88 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		58271941250DF601004224C0 /* randika_perera-COBScComp191p-037 */ = {
 			isa = PBXGroup;
 			children = (
+				588068F52523F4DA007B7C5E /* Services */,
 				581FF4F72520DD7D00A70AFF /* Extensions */,
 				586DC1D82517674900680A17 /* Helpers */,
 				58908C4F2516CF0900B68C4B /* Model */,
@@ -233,6 +236,14 @@
 				588068DC25239F59007B7C5E /* ProfileViewController.swift */,
 			);
 			path = SettingsControllers;
+			sourceTree = "<group>";
+		};
+		588068F52523F4DA007B7C5E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				588068F62523F4DA007B7C5E /* ValidationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		58908C4D2516CEF800B68C4B /* Controller */ = {
@@ -577,6 +588,7 @@
 			files = (
 				588068D825235E1D007B7C5E /* NotificationsViewController.swift in Sources */,
 				586DC1DC2517679200680A17 /* UserFunctions.swift in Sources */,
+				588068F72523F4DA007B7C5E /* ValidationService.swift in Sources */,
 				581FF4FB2520DEA600A70AFF /* UIViewControllerExtensions.swift in Sources */,
 				586DC1E025176FEE00680A17 /* SignUpViewController.swift in Sources */,
 				581FF4F42520668C00A70AFF /* DebugHelper.swift in Sources */,
