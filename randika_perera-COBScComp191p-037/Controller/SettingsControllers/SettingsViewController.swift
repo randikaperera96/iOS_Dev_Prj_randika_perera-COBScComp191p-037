@@ -9,10 +9,13 @@
 import UIKit
 import Firebase
 import LocalAuthentication
+import SafariServices
 
-class SettingsViewController: UITableViewController {
+class SettingsViewController: UITableViewController, SFSafariViewControllerDelegate {
 	
 	let PROFILE_SEGUE = "profileSegue"
+	
+	let CONTACT_US_URL = URL(string: "https://www.nibmworldwide.com/contact")
 	
 	//MARK: Properties
 	private let AUTH_SEGUE = "AuthSegue"
@@ -31,6 +34,13 @@ class SettingsViewController: UITableViewController {
 		biometricAuth()
 	}
 	
+	@IBAction func btContactUsTapped(_ sender: Any) {
+		
+//		UIApplication.shared.open(CONTACT_US_URL!, options: [UIApplication.OpenExternalURLOptionsKey : ], completionHandler: nil)
+		let vc = SFSafariViewController(url: CONTACT_US_URL!)
+		vc.delegate = self
+		present(vc, animated: true, completion: nil);
+	}
 	
 	func checkAndShowLogIn(){
 

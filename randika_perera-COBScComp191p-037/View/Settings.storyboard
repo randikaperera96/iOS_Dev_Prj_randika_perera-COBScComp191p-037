@@ -162,6 +162,9 @@
                                                     <state key="normal" title="  Contact Us/ About Us" image="chevron.right" catalog="system">
                                                         <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="btContactUsTapped:" destination="0bk-tt-5pv" eventType="touchUpInside" id="hXA-aK-JBw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

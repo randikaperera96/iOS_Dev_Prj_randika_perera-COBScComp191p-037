@@ -79,7 +79,7 @@ class MapViewController: UIViewController, MKMapViewDelegate{
 extension MapViewController: CLLocationManagerDelegate{
 	
 	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-		guard let location = locations.last else {return}
+		guard locations.last != nil else {return}
 		centerViewOnUserLocation()
 	}
 	
